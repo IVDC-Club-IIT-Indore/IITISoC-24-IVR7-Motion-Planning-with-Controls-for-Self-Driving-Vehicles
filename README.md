@@ -132,6 +132,8 @@ https://docs.google.com/spreadsheets/d/17M89Dh4DRQxYJfTK4u48PiHGHFnKuStqf_kaLztg
   https://youtu.be/UR0hOmjaHp0?si=MUCW_nwGLe8yaLhb</br>
   https://youtu.be/idQb2pB-h2Q?si=YXm61nxTsX0w9an5</br>
   https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Controller.py</br>
-  https://github.com/AtsushiSakai/PythonRobotics/tree/master?tab=readme-ov-file#rapidly-exploring-random-trees-rrt
+  https://github.com/AtsushiSakai/PythonRobotics/tree/master?tab=readme-ov-file#rapidly-exploring-random-trees-rrt</br>
+
+  We will be implementing the path planner and the controller on our bot in RViz after this.
 
 
