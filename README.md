@@ -53,6 +53,12 @@ Sampling based algorithms doesn't require fully exploring the configurational sp
 
 
 The RRT* algorithm has been used for path planning. The code implementation takes the binary occupancy grid map as .npy file for detecting the obstacles and the start point, goal point and waypoints are given as input co-ordinates. The final path is visualized using the matplotlib library.
+
+Visualisation of waypoints is as follows:
+
+![waypoints ](https://github.com/user-attachments/assets/9a07e92a-306a-4a5c-ab09-299f322e5469)
+
+Visualisation of path planned on the binary occupancy map is as follows:
  
 ## Control Algorithm
 ### Path Following and Control Algorithm
