@@ -46,11 +46,13 @@ On opening the .pgm file the map we get
 ![world_map](https://github.com/user-attachments/assets/9f6fa071-4bf5-4b78-aa47-e052c8d36fa7)
 
 ### Path Planning
-Path Planning gives us robot's trajectory from its starting state to some goal state in the map. Graph-Based solutions to the path planning is based on discretizing the environment into nodes, and the optimal solution is found by calculating the cost to access these nodes to reach the goal node. 
-There are most popularly two approaches for path planning - Search based methods & Sampling based methods. In Search based algorithms, cost to access each node from start node in graph is calculated, to get the most optimal or shortest path to reach the goal node. Common examples being Dijkstra's and A* algorithms. As the size of map and dimensions increases they become computational expensive but still give us the shortest possible path.
+Path Planning gives the vehicle's trajectory from its starting state to some goal state in the map. There are most popularly two approaches for path planning - Search based methods & Sampling based methods. In Search based algorithms, cost to access each node from start node in graph is calculated, to get the most optimal or shortest path to reach the goal node. Common examples being Dijkstra's and A* algorithms. As the size of map and dimensions increases they become computational expensive but still give us the shortest possible path.
+
+<br>
 In Sampling based algorithms, as the name suggests random sampling of nodes to get the path isn't done, instead a smart approach of Rapidly exploring Random Trees is used, which is often referred as basic RRT algorithm, it requires lesser computational power compared to Search Based Algorithms, but doesn't output the most optimal path for the robot. RRT* Algorithm( modification of RRT ) gives the nearest to most optimal path for the robot. 
-In this project , we have implemented the RRT* and A* algorithms to find the path for our robot in the above mentioned world_map. 
-We have mentioned the waypoints to make the robot move around the map 
+
+<br>
+The RRT* algorithm has been used for path planning. The code implementation takes the binary occupancy grid map as .npy file for detecting the obstacles and the start point, goal point and waypoints are given as input co-ordinates. The final path is visualized using the matplotlib library.
  
 ### Control Algorithm
 PID algorithm is used
