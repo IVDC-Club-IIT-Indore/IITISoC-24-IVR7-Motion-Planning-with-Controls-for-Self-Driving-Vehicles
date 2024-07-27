@@ -47,9 +47,13 @@ On opening the .pgm file the map we get
 
 ### Path Planning
 Path Planning gives the vehicle's trajectory from its starting state to some goal state in the map. There are most popularly two approaches for path planning - Search based methods & Sampling based methods. In Search based algorithms, cost to access each node from start node in graph is calculated, to get the most optimal or shortest path to reach the goal node. Common examples being Dijkstra's and A* algorithms. As the size of map and dimensions increases they become computational expensive but still give us the shortest possible path.
-<br/>
+
+<br>
+
 Sampling based algorithms doesn't require fully exploring the configurational space and it also requires lesser computational power, though it doesn't give the most optimal path as output. RRT* Algorithm( modification of RRT ), which gives the nearest to most optimal path for the robot, is an example of sampling based algorithm. 
-<br/>
+
+<br>
+
 The RRT* algorithm has been used for path planning. The code implementation takes the binary occupancy grid map as .npy file for detecting the obstacles and the start point, goal point and waypoints are given as input co-ordinates. The final path is visualized using the matplotlib library.
  
 ### Control Algorithm
