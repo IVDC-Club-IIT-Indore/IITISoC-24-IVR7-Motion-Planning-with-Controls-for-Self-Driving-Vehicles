@@ -20,7 +20,20 @@ Members:
 A three-wheeled vehicle is modeled and is visualized in gazebo simulator and RViz. The world file provided is mapped using Simeltaneous Mapping and Loacalization (SLAM) method. For Path planning RRT* and A* algorithms were used on the map generated and PID algorithm is used for control algorithm. 
 
 ## Vehicle Modelling
-The vehicle is modeled in an urdf file.
+Here explains how to model a three-wheeled vehicle using URDF files and Xacro in ROS2, focusing on splitting the model into components for better organization and understanding:
+** Prerequisites **
+
+- ROS2 Humble
+- Gazebo classics
+
+**1. Creat a workspace **
+``` mkdir -p ~/ros2_ws/src
+    cd ~/ros2_ws```
+**2. clone the packages**
+```git clone ```
+
+
+
 
 ## Mapping the world file
 The orange_igvc.world world file is mapped using SLAM method with the help of Navigation2 stack of ROS2 and turtlebot3 robot.
