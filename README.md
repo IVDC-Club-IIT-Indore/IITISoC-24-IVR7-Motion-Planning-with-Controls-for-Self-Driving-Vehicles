@@ -29,14 +29,11 @@ Here we explains how to model a three-wheeled vehicle using URDF files and Xacro
 ### 1.Create aworkspace 
 ```bash
 mkdir ~/ros2_ws/src
-   cd ~/ros2_ws/src```
+   cd ~/ros2_ws/src
+```
 
-### 2.Clone the git repo of the july_9
-```bash
-git clone
- ```
 
-### 3.Build the workspace with the colcon build
+### 2.Build the workspace with the colcon build
 ```bash
 cd ~/ros2_ws
 colcon build
