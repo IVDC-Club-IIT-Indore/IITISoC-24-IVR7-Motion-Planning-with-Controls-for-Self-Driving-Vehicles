@@ -51,6 +51,7 @@ Path Planning gives the vehicle's trajectory from its starting state to some goa
 <br>
 In Sampling based algorithms, as the name suggests random sampling of nodes to get the path isn't done, instead a smart approach of Rapidly exploring Random Trees is used, which is often referred as basic RRT algorithm, it requires lesser computational power compared to Search Based Algorithms, but doesn't output the most optimal path for the robot. RRT* Algorithm( modification of RRT ) gives the nearest to most optimal path for the robot. 
 
+
 <br>
 The RRT* algorithm has been used for path planning. The code implementation takes the binary occupancy grid map as .npy file for detecting the obstacles and the start point, goal point and waypoints are given as input co-ordinates. The final path is visualized using the matplotlib library.
  
