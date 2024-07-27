@@ -56,7 +56,8 @@ The RRT* algorithm has been used for path planning. The code implementation take
 
 Visualisation of waypoints is as follows:
 
-![waypoints ](https://github.com/user-attachments/assets/9a07e92a-306a-4a5c-ab09-299f322e5469)
+![waypoints](https://github.com/user-attachments/assets/f41e8b76-5f71-4691-84c8-5bcb451fe8fe)
+
 
 Visualisation of path planned on the binary occupancy map is as follows:
  
