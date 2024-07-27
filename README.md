@@ -46,6 +46,7 @@ On opening the .pgm file the map we get
 ![world_map](https://github.com/user-attachments/assets/9f6fa071-4bf5-4b78-aa47-e052c8d36fa7)
 
 ### Path Planning
+For path planning sampling-based algorithm (RRT* algorithm) and search-based algorithm (A* algorithm) is used. The maps2.pgm file is converted into an numpy array and is given as input along with the points for the waypoints to be plotted.
 
 ### Control Algorithm
 PID algorithm is used
