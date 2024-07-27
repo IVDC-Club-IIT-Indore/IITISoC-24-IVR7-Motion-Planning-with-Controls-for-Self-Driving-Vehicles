@@ -16,7 +16,7 @@ Members:
 - [Swarangi Kale](https://github.com/Swarangi-codes)
 - [Jagrit](https://github.com/idJagrit)
 
-## Project Overview & Solution:
+## Project Overview & Solution
 A three-wheeled vehicle is modeled and is visualized in gazebo simulator and RViz. The world file provided is mapped using Simeltaneous Mapping and Loacalization (SLAM) method. For Path planning RRT* and A* algorithms were used on the map generated and PID algorithm is used for control algorithm. 
 
 ### Vehicle Modelling
@@ -50,7 +50,7 @@ Path Planning gives the vehicle's trajectory from its starting state to some goa
 
 <br>
 Sampling based algorithms doesn't require fully exploring the configurational space and it also requires lesser computational power, though it doesn't give the most optimal path as output. RRT* Algorithm( modification of RRT ), which gives the nearest to most optimal path for the robot, is an example of sampling based algorithm. 
-
+<br>
 
 The RRT* algorithm has been used for path planning. The code implementation takes the binary occupancy grid map as .npy file for detecting the obstacles and the start point, goal point and waypoints are given as input co-ordinates. The final path is visualized using the matplotlib library.
  
