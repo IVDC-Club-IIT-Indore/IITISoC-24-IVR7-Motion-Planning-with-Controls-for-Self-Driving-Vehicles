@@ -20,7 +20,52 @@ Members:
 A three-wheeled vehicle is modeled and is visualized in gazebo simulator and RViz. The world file provided is mapped using Simeltaneous Mapping and Loacalization (SLAM) method. For Path planning RRT* algorithm were used on the map generated and PID algorithm is used for control algorithm. 
 
 ## Vehicle Modelling
-The vehicle is modeled in an urdf file.
+Here we explains how to model a three-wheeled vehicle using URDF files and Xacro in ROS2, focusing on splitting the model into components for better organization and understanding:
+### Prerequisites
+
+- ROS2 Humble
+- Gazebo classic version
+**Note:** For downloading ros2 humble look into ros2 humble documents : https://docs.ros.org/en/humble/Tutorials.html
+### 1.Create aworkspace 
+```bash
+mkdir ~/ros2_ws/src
+   cd ~/ros2_ws/src```
+
+### 2.Clone the git repo of the july_9
+```bash
+git clone
+ ```
+
+### 3.Build the workspace with the colcon build
+```bash
+cd ~/ros2_ws
+colcon build
+source install/setup.bash
+```
+
+### File discription
+`robot.urdf.xacro`-main file contains other conmponents of the file such as chassis,lidar,imu
+`chassis.xacro`-contains upper and lower part of the chassis
+`robot_core.xacro`-contains the right and left wheel, caster wheel
+`inertial.xacro`-contains the interial properties of the vechile
+`lidar.xacro`-contains details of the lidar and pulgins foe the lidar
+`imu.xacro`- has the details of the imu sensors and plugin 
+`ros2_control_wheel.xacro`-this file for define the diff_controllers for the better control over the vechile
+
+Launching the vehicle in the gazebo
+```bash
+ros2 launch july_9 launch_sim.launch.py
+```
+![image](https://github.com/user-attachments/assets/502b84b2-2b00-4ef5-bf01-afd9d56e1b17)
+
+
+Launching the vehicle in the gazebo with world
+```bash
+ros2 launch july_9 new_launch_sim.launch.py
+```
+
+During SLAM the lidar range extended to infinity, due to which queue size got filled up and therefore was not able to send messages to RViz.
+
 
 ## Mapping the world file
 The orange_igvc.world world file is mapped using SLAM method with the help of Navigation2 stack of ROS2 and turtlebot3 robot.
@@ -77,5 +122,13 @@ Visualisation of path planned on the binary occupancy map is as follows:
 * Then, the CTE and orientation errors are calculated using this data.
 * These are minimized by controlling the linear and angular velocity of the bot using two seperate PID loops.
 * These values are published to the cmd_vel topic using a publisher created in the same node.
+
+  ## Sources
+
+  https://youtu.be/O8RENvOxbTY?si=LwuDwQEdjK0KXRDY
+  https://youtu.be/UR0hOmjaHp0?si=MUCW_nwGLe8yaLhb
+  https://youtu.be/idQb2pB-h2Q?si=YXm61nxTsX0w9an5
+  https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Controller.py
+  https://github.com/AtsushiSakai/PythonRobotics/tree/master?tab=readme-ov-file#rapidly-exploring-random-trees-rrt
 
 
