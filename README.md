@@ -31,7 +31,10 @@ Here we explains how to model a three-wheeled vehicle using URDF files and Xacro
 mkdir ~/ros2_ws/src
    cd ~/ros2_ws/src
 ```
-
+### 2.clone the repo
+```bash
+git clone https://github.com/IVDC-Club-IIT-Indore/IITISoC-24-IVR7-Motion-Planning-with-Controls-for-Self-Driving-Vehicles.git
+```
 
 ### 2.Build the workspace with the colcon build
 ```bash
