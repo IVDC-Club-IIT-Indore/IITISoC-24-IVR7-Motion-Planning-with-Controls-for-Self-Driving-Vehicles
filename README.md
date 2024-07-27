@@ -17,7 +17,7 @@ Members:
 - [Jagrit](https://github.com/idJagrit)
 
 # Project Overview & Solution
-A three-wheeled vehicle is modeled and is visualized in gazebo simulator and RViz. The world file provided is mapped using Simeltaneous Mapping and Loacalization (SLAM) method. For Path planning RRT* and A* algorithms were used on the map generated and PID algorithm is used for control algorithm. 
+A three-wheeled vehicle is modeled and is visualized in gazebo simulator and RViz. The world file provided is mapped using Simeltaneous Mapping and Loacalization (SLAM) method. For Path planning RRT* algorithm were used on the map generated and PID algorithm is used for control algorithm. 
 
 ## Vehicle Modelling
 The vehicle is modeled in an urdf file.
@@ -56,11 +56,12 @@ The RRT* algorithm has been used for path planning. The code implementation take
 
 Visualisation of waypoints is as follows:
 
-![waypoints](https://github.com/user-attachments/assets/f41e8b76-5f71-4691-84c8-5bcb451fe8fe)
-
+![](https://github.com/user-attachments/assets/f41e8b76-5f71-4691-84c8-5bcb451fe8fe)
 
 Visualisation of path planned on the binary occupancy map is as follows:
- 
+
+![](https://github.com/user-attachments/assets/a00cb808-e082-4d23-88b0-e95432832c42)
+
 ## Control Algorithm
 ### Path Following and Control Algorithm
 
