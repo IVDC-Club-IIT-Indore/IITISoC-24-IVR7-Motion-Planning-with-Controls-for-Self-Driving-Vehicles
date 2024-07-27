@@ -107,6 +107,9 @@ Visualisation of path planned on the binary occupancy map is as follows:
 
 ![](https://github.com/user-attachments/assets/a00cb808-e082-4d23-88b0-e95432832c42)
 
+**Comparison of Path Planning Algorithms**
+https://docs.google.com/spreadsheets/d/17M89Dh4DRQxYJfTK4u48PiHGHFnKuStqf_kaLztgRA0/edit?gid=0#gid=0 
+
 ## Control Algorithm
 ### Path Following and Control Algorithm
 
@@ -125,10 +128,10 @@ Visualisation of path planned on the binary occupancy map is as follows:
 
   ## Sources
 
-  https://youtu.be/O8RENvOxbTY?si=LwuDwQEdjK0KXRDY
-  https://youtu.be/UR0hOmjaHp0?si=MUCW_nwGLe8yaLhb
-  https://youtu.be/idQb2pB-h2Q?si=YXm61nxTsX0w9an5
-  https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Controller.py
+  https://youtu.be/O8RENvOxbTY?si=LwuDwQEdjK0KXRDY</br>
+  https://youtu.be/UR0hOmjaHp0?si=MUCW_nwGLe8yaLhb</br>
+  https://youtu.be/idQb2pB-h2Q?si=YXm61nxTsX0w9an5</br>
+  https://github.com/Tinker-Twins/Self_Driving_Car_Trajectory_Tracking/blob/main/Controller.py</br>
   https://github.com/AtsushiSakai/PythonRobotics/tree/master?tab=readme-ov-file#rapidly-exploring-random-trees-rrt
 
 
